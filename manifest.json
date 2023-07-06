@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Girl Genius next page hotkey",
+  "version": "1.0",
+
+  "description": "Adds a hotkey for going to the next page on https://www.girlgeniusonline.com/",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.girlgeniusonline.com/*"],
+      "js": ["gg.js"]
+    }
+  ]
+}
